@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,7 @@
             background:
                 linear-gradient(rgba(0, 70, 35, 0.75),
                 rgba(0, 40, 20, 0.75)),
-                url("rm.jpg");
+                url("kp.jpg");
 
             background-size: cover;
             background-position: center;
@@ -57,7 +56,6 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
-            transition: 0.3s;
         }
 
         nav a:hover {
@@ -100,37 +98,35 @@
         /* CARDS */
 
         .benefit-container {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+            gap: 20px;
+            max-width: 1050px;
+            margin: 0 auto;
         }
 
         .card {
             background: white;
-
-            width: 280px;
-            min-height: 300px;
-
-            padding: 30px 25px;
-
-            border-radius: 20px;
-
-            box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
-
-            transition: 0.3s;
+            padding: 26px 22px;
+            border: 1px solid #e1eee5;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0, 80, 40, 0.07);
         }
 
         .card:hover {
-            transform: translateY(-10px);
-
-            box-shadow:
-                0 15px 35px rgba(0, 80, 40, 0.20);
+            border-color: #b9dfc5;
+            box-shadow: 0 8px 20px rgba(0, 80, 40, 0.11);
         }
 
         .icon {
-            font-size: 50px;
-            margin-bottom: 15px;
+            display: grid;
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 16px;
+            place-items: center;
+            border-radius: 50%;
+            background: #e8f7ed;
+            font-size: 30px;
         }
 
         .card h3 {
@@ -190,14 +186,12 @@
 
             cursor: pointer;
 
-            transition: 0.3s;
         }
 
         button:hover {
             background: #8cffb5;
             color: #075c32;
 
-            transform: translateY(-3px);
         }
 
         /* FOOTER */
@@ -244,11 +238,6 @@
                 font-size: 25px;
             }
 
-            .card {
-                width: 100%;
-                max-width: 320px;
-            }
-
             .message {
                 margin: 20px;
             }
@@ -268,11 +257,15 @@
 
             <a href="home.html">Home</a>
 
+            <a href="about.html">About</a>
+
             <a href="benefits.html">Benefits</a>
 
-            <a href="eco lifestyle.html">
+            <a href="ecohtml.html">
                 Eco Lifestyle
             </a>
+
+            <a href="contact.html">Contact</a>
 
         </nav>
 
@@ -311,7 +304,7 @@
             <div class="card">
 
                 <div class="icon">
-                    🌍
+                    
                 </div>
 
                 <h3>
@@ -332,7 +325,7 @@
             <div class="card">
 
                 <div class="icon">
-                    🌳
+                    
                 </div>
 
                 <h3>
@@ -353,7 +346,7 @@
             <div class="card">
 
                 <div class="icon">
-                    💚
+                    
                 </div>
 
                 <h3>
@@ -374,7 +367,7 @@
             <div class="card">
 
                 <div class="icon">
-                    ♻️
+                    
                 </div>
 
                 <h3>
@@ -395,7 +388,7 @@
             <div class="card">
 
                 <div class="icon">
-                    💧
+                    
                 </div>
 
                 <h3>
@@ -416,7 +409,7 @@
             <div class="card">
 
                 <div class="icon">
-                    ⚡
+                    
                 </div>
 
                 <h3>
@@ -441,7 +434,7 @@
     <section class="message">
 
         <h2>
-            🌱 Small Steps, Big Change
+            Small Steps, Big Change
         </h2>
 
         <p>
@@ -463,7 +456,7 @@
 
         <p>
             © 2026 Eco Friendly Lifestyle |
-            Let's Make Our Planet Greener 🌎🌱
+            Let's Make Our Planet Greener 
         </p>
 
     </footer>
@@ -471,4 +464,3 @@
 
 </body>
 </html>
-```

@@ -1,16 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Eco Friendly Lifestyle</title>
-
+    <title>Eco Lifestyle | Eco Friendly Lifestyle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
         * {
             margin: 0;
@@ -24,28 +20,23 @@
             color: #222;
         }
 
-        /* HERO SECTION */
         .hero {
-            min-height: 70vh;
-            padding: 25px 8%;
+            min-height: 75vh;
+            padding: 25px 8% 70px;
             text-align: center;
             color: white;
-
             background:
                 linear-gradient(rgba(0, 80, 40, 0.65), rgba(0, 40, 20, 0.7)),
-                url("rm.jpg");
-
-            background-size: cover;
-            background-position: center;
+                url("kp.jpg") center / cover;
         }
 
-        /* NAVIGATION */
         nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
             gap: 30px;
-            margin-bottom: 70px;
+            margin-bottom: 90px;
         }
 
         nav a {
@@ -53,105 +44,89 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
-            transition: 0.3s;
         }
 
-        nav a:hover {
+        nav a:hover,
+        nav a:focus-visible {
             color: #9cffc7;
         }
 
-        /* HERO CONTENT */
         .hero h1 {
             color: #9cffc7;
-            font-size: 48px;
+            font-size: clamp(34px, 6vw, 54px);
             font-weight: 700;
-            text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 15px;
         }
 
-        .hero h4 {
+        .hero h2 {
             color: #ffd27d;
-            font-size: 17px;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin-bottom: 18px;
         }
 
         .hero p {
             max-width: 750px;
-            margin: 15px auto;
+            margin: 0 auto 25px;
             font-size: 17px;
             line-height: 1.8;
         }
 
-        /* BUTTON */
-        button {
-            border: none;
+        .button {
+            display: inline-block;
+            border-radius: 30px;
+            padding: 13px 28px;
             background: #8cffb5;
             color: #075c32;
-            padding: 13px 28px;
-            margin: 20px 0;
-            font-size: 16px;
             font-weight: 600;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
+            text-decoration: none;
         }
 
-        button:hover {
+        .button:hover,
+        .button:focus-visible {
             background: white;
-            transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        /* ABOUT SECTION */
-        .habit {
+        main {
             padding: 60px 8%;
             text-align: center;
         }
 
-        .habit h2 {
+        main h2 {
             color: #176b3a;
             font-size: 30px;
             margin-bottom: 10px;
         }
 
-        .habit > h4 {
-            color: #777;
-            margin-bottom: 40px;
+        .intro {
+            max-width: 760px;
+            margin: 0 auto 38px;
+            color: #666;
+            line-height: 1.8;
         }
 
-        /* CARDS */
         .cards {
             display: flex;
             justify-content: center;
-            gap: 25px;
+            align-items: stretch;
             flex-wrap: wrap;
+            gap: 25px;
         }
 
-        .eco-box {
-            background: white;
+        .eco-card {
             width: 280px;
-            min-height: 390px;
             padding: 25px;
             border-radius: 20px;
-
+            background: white;
             box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
-
-            transition: 0.3s;
         }
 
-        .eco-box:hover {
-            transform: translateY(-10px);
+        .eco-card:hover {
             box-shadow: 0 15px 35px rgba(0, 80, 40, 0.2);
         }
 
-        .eco-box h3 {
-            color: #176b3a;
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-
-        .eco-box img {
+        .eco-card img {
             width: 150px;
             height: 150px;
             object-fit: cover;
@@ -160,164 +135,137 @@
             border: 5px solid #d9f5e4;
         }
 
-        .eco-box p {
+        .eco-icon {
+            display: grid;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 15px;
+            place-items: center;
+            border: 5px solid #d9f5e4;
+            border-radius: 50%;
+            background: #e8f7ed;
+            font-size: 64px;
+        }
+
+        .eco-card h3 {
+            color: #176b3a;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .eco-card p {
             color: #555;
             font-size: 14px;
             line-height: 1.7;
         }
 
-        /* FOOTER */
+        .eco-card .button {
+            margin-top: 18px;
+        }
+
         footer {
             background: #0b4d2b;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 30px;
         }
 
         footer p {
             font-size: 14px;
         }
 
-        /* MOBILE */
         @media (max-width: 600px) {
-
             .hero {
-                min-height: 75vh;
-                padding: 20px;
+                min-height: 70vh;
+                padding: 20px 6% 55px;
             }
 
             nav {
-                gap: 12px;
-                margin-bottom: 50px;
+                gap: 14px;
+                margin-bottom: 60px;
             }
 
             nav a {
-                font-size: 13px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero p {
                 font-size: 14px;
             }
 
-            .habit h2 {
-                font-size: 23px;
+            .hero p {
+                font-size: 15px;
             }
 
-            .eco-box {
+            main {
+                padding: 45px 6%;
+            }
+
+            main h2 {
+                font-size: 24px;
+            }
+
+            .eco-card {
                 width: 100%;
                 max-width: 320px;
             }
         }
     </style>
 </head>
-
 <body>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-
-        <nav>
+    <header class="hero">
+        <nav aria-label="Main navigation">
             <a href="home.html">Home</a>
+            <a href="about.html">About</a>
             <a href="benefits.html">Benefits</a>
-            <a href="eco lifestyle.html">Eco Lifestyle</a>
+            <a href="ecohtml.html" aria-current="page">Eco Lifestyle</a>
+            <a href="contact.html">Contact</a>
         </nav>
-
-        <h1>Eco Friendly Lifestyle</h1>
-
-        <h4>Welcome to our Eco Friendly Lifestyle Website! 🌎🌱</h4>
-
+        <h1>Eco-Friendly Living</h1>
+        <h2>A greener tomorrow starts today 🌿</h2>
         <p>
-            Our planet is our home, and protecting it starts with the
-            small choices we make every day. An eco-friendly lifestyle
-            means reducing waste, preventing pollution, saving natural
-            resources, and respecting nature.
+            Our planet is our home. Protecting it starts with small choices:
+            reducing waste, saving natural resources, and showing respect for
+            nature in our everyday lives.
         </p>
+        <a class="button" href="#everyday-habits">Explore everyday habits →</a>
+    </header>
 
-        <button>Explore →</button>
-
-        <p>Let's make our planet greener 🌱</p>
-
-    </section>
-
-
-    <!-- ABOUT SECTION -->
-    <section class="habit">
-
-        <h2>ABOUT ECO-FRIENDLY LIFESTYLE</h2>
-
-        <h4>A Green Tomorrow Starts Today 🌿</h4>
-
-
+    <main id="everyday-habits">
+        <h2>Simple habits, lasting impact</h2>
+        <p class="intro">
+            You don't have to do everything at once. Choose a few practical
+            habits and make them part of your routine to help care for the planet.
+        </p>
         <div class="cards">
-
-            <!-- CARD 1 -->
-            <div class="eco-box">
-
+            <article class="eco-card">
+                <img src="kp.jpg" alt="Green forest representing protected nature">
                 <h3>🌳 Protect Nature</h3>
-
-                <img src="kp.jpg" alt="Protect Nature">
-
                 <p>
-                    Protecting nature helps preserve forests, wildlife,
-                    and biodiversity for future generations.
+                    Protecting nature helps preserve forests, wildlife, and
+                    biodiversity for future generations.
                 </p>
-
-                <button>Learn More →</button>
-
-            </div>
-
-
-            <!-- CARD 2 -->
-            <div class="eco-box">
-
+                <a class="button" href="benefits.html">Learn More →</a>
+            </article>
+            <article class="eco-card">
+                <img src="cs.jpg" alt="A green planet surrounded by trees">
                 <h3>💧 Save Water</h3>
-
-                <img src="water.jpg" alt="Save Water">
-
                 <p>
-                    Avoid wasting water in daily life and use this
-                    valuable resource carefully and efficiently.
+                    Avoid wasting water in daily life and use this valuable
+                    resource carefully and efficiently.
                 </p>
-
-                <button>Learn More →</button>
-
-            </div>
-
-
-            <!-- CARD 3 -->
-            <div class="eco-box">
-
+                <a class="button" href="benefits.html">Learn More →</a>
+            </article>
+            <article class="eco-card">
+                <div class="eco-icon" aria-hidden="true">♻️</div>
                 <h3>♻️ Reduce Waste</h3>
-
-                <img src="waste.jpg" alt="Reduce Waste">
-
                 <p>
-                    Reduce, reuse, and recycle materials to minimize
-                    waste and keep our environment clean.
+                    Reduce, reuse, and recycle materials to minimize waste and
+                    keep our environment clean.
                 </p>
-
-                <button>Learn More →</button>
-
-            </div>
-
+                <a class="button" href="benefits.html">Learn More →</a>
+            </article>
         </div>
+    </main>
 
-    </section>
-
-
-    <!-- FOOTER -->
     <footer>
-
-        <p>
-            © 2026 Eco Friendly Lifestyle | Let's Make Our Planet Greener 🌎🌱
-        </p>
-
+        <p>© 2026 Eco Friendly Lifestyle | Let's make our planet greener 🌎🌱</p>
     </footer>
-
 </body>
 </html>

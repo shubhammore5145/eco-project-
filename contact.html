@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Eco Friendly Lifestyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #f1f8f3;
+            color: #222;
+        }
+
+        .hero {
+            min-height: 48vh;
+            padding: 25px 8% 55px;
+            text-align: center;
+            color: white;
+            background:
+                linear-gradient(rgba(0, 80, 40, 0.65), rgba(0, 40, 20, 0.7)),
+                url("kp.jpg") center / cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 55px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            color: #9cffc7;
+        }
+
+        .hero h1 {
+            color: #9cffc7;
+            font-size: clamp(34px, 6vw, 54px);
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 55px 8%;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .contact-info,
+        .contact-form {
+            padding: 30px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            color: #176b3a;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .contact-info p,
+        .form-note {
+            color: #5d675f;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .contact-info .prompt {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            background: #e8f7ed;
+            color: #176b3a;
+            font-weight: 500;
+        }
+
+        .contact-form form {
+            display: grid;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .field {
+            display: grid;
+            gap: 6px;
+            text-align: left;
+        }
+
+        .field label {
+            color: #31563e;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #c9ddce;
+            border-radius: 10px;
+            background: #fbfdfb;
+            color: #222;
+            font: inherit;
+        }
+
+        .field input:focus,
+        .field textarea:focus {
+            outline: 2px solid #65c687;
+            outline-offset: 2px;
+        }
+
+        .field textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        .form-note {
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: #fff6df;
+            color: #71551d;
+        }
+
+        .submit-button {
+            justify-self: start;
+            padding: 12px 24px;
+            border: 0;
+            border-radius: 30px;
+            background: #b9c6bc;
+            color: #354139;
+            font: inherit;
+            font-weight: 600;
+            cursor: not-allowed;
+        }
+
+        footer {
+            background: #0b4d2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                padding: 20px 6% 45px;
+            }
+
+            nav {
+                gap: 14px;
+                margin-bottom: 45px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            main {
+                padding: 40px 6%;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-form {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <nav aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="benefits.html">Benefits</a>
+            <a href="ecohtml.html">Eco Lifestyle</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+        <h1>Get in Touch</h1>
+        <p>
+            Have an idea, question, or suggestion about greener living?
+            We’d love to hear what matters to you.
+        </p>
+    </header>
+
+    <main>
+        <div class="contact-layout">
+            <section class="contact-info" aria-labelledby="contact-info-title">
+                <h2 id="contact-info-title">Let’s make a difference</h2>
+                <p>
+                    Share the eco-friendly habits you care about, suggest a
+                    topic for the site, or tell us what you’d like to learn next.
+                </p>
+                <p class="prompt">
+                    Every thoughtful idea can help inspire a greener community. 🌱
+                </p>
+            </section>
+
+            <section class="contact-form" aria-labelledby="message-title">
+                <h2 id="message-title">Send us a message</h2>
+                <p class="form-note">
+                    This is a visual form template. Messages will not be sent
+                    until a form service or server is connected.
+                </p>
+                <form>
+                    <div class="field">
+                        <label for="name">Your name</label>
+                        <input id="name" name="name" type="text" autocomplete="name">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email">
+                    </div>
+                    <div class="field">
+                        <label for="message">Your message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button class="submit-button" type="button" disabled>
+                        Message form coming soon
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Eco Friendly Lifestyle | Let's make our planet greener 🌎🌱</p>
+    </footer>
+</body>
+</html>

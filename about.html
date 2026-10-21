@@ -1,7 +1,10 @@
 
 <!DOCTYPE html>
-<html>
-<head><title> eco friendly lifestyle </title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Eco Friendly Lifestyle</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -27,7 +30,7 @@
 
             background:
                 linear-gradient(rgba(0, 80, 40, 0.65), rgba(0, 40, 20, 0.7)),
-                url("rm.jpg");
+                url("kp.jpg");
 
             background-size: cover;
             background-position: center;
@@ -47,7 +50,6 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
-            transition: 0.3s;
         }
 
         nav a:hover {
@@ -78,7 +80,8 @@
         }
 
         /* BUTTON */
-        button {
+        .button {
+            display: inline-block;
             border: none;
             background: #8cffb5;
             color: #075c32;
@@ -87,13 +90,12 @@
             font-size: 16px;
             font-weight: 600;
             border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
+            text-decoration: none;
         }
 
-        button:hover {
+        .button:hover,
+        .button:focus-visible {
             background: white;
-            transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
@@ -131,11 +133,9 @@
 
             box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
 
-            transition: 0.3s;
         }
 
         .eco-box:hover {
-            transform: translateY(-10px);
             box-shadow: 0 15px 35px rgba(0, 80, 40, 0.2);
         }
 
@@ -217,24 +217,25 @@
 
         <nav>
             <a href="home.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
             <a href="benefits.html">Benefits</a>
-            <a href="eco lifestyle.html">Eco Lifestyle</a>
+            <a href="ecohtml.html">Eco Lifestyle</a>
+            <a href="contact.html">Contact</a>
         </nav>
 
-        <h1>Eco Friendly Lifestyle</h1>
+        <h1>About Us</h1>
 
-        <h4>Welcome to our Eco Friendly Lifestyle Website! 🌎🌱</h4>
+        <h4>A greener future begins with everyday choices 🌎🌱</h4>
 
         <p>
-            Our planet is our home, and protecting it starts with the
-            small choices we make every day. An eco-friendly lifestyle
-            means reducing waste, preventing pollution, saving natural
-            resources, and respecting nature.
+            We created this site to make sustainable living easier to understand
+            and put into practice. Our goal is to share approachable ideas that
+            help people care for the planet in their daily lives.
         </p>
 
-        <button>Explore →</button>
+        <a class="button" href="benefits.html">Discover the benefits →</a>
 
-        <p>Let's make our planet greener 🌱</p>
+        <p>Learn, make a change, and inspire others 🌱</p>
 
     </section>
 
@@ -242,9 +243,9 @@
     <!-- ABOUT SECTION -->
     <section class="habit">
 
-        <h2>ABOUT ECO-FRIENDLY LIFESTYLE</h2>
+        <h2>What We Care About</h2>
 
-        <h4>A Green Tomorrow Starts Today 🌿</h4>
+        <h4>Practical habits. A healthier planet. 🌿</h4>
 
 
         <div class="cards">
@@ -261,7 +262,7 @@
                     and biodiversity for future generations.
                 </p>
 
-                <button>Learn More →</button>
+                <a class="button" href="benefits.html">Learn More →</a>
 
             </div>
 
@@ -271,14 +272,14 @@
 
                 <h3>💧 Save Water</h3>
 
-                <img src="water.jpg" alt="Save Water">
+                <img src="cs.jpg" alt="A green planet surrounded by trees">
 
                 <p>
                     Avoid wasting water in daily life and use this
                     valuable resource carefully and efficiently.
                 </p>
 
-                <button>Learn More →</button>
+                <a class="button" href="benefits.html">Learn More →</a>
 
             </div>
 
@@ -288,14 +289,14 @@
 
                 <h3>♻️ Reduce Waste</h3>
 
-                <img src="waste.jpg" alt="Reduce Waste">
+                <img src="cs.jpg" alt="A clean natural environment">
 
                 <p>
                     Reduce, reuse, and recycle materials to minimize
                     waste and keep our environment clean.
                 </p>
 
-                <button>Learn More →</button>
+                <a class="button" href="benefits.html">Learn More →</a>
 
             </div>
 
@@ -315,4 +316,3 @@
 
 </body>
 </html>
-

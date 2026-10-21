@@ -27,7 +27,7 @@
             color: white;
             background:
                 linear-gradient(rgba(0, 80, 40, 0.65), rgba(0, 40, 20, 0.7)),
-                url("rm.jpg") center / cover;
+                url("kp.jpg") center / cover;
         }
 
         nav {
@@ -44,7 +44,6 @@
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
-            transition: color 0.3s;
         }
 
         nav a:hover,
@@ -81,14 +80,25 @@
             color: #075c32;
             font-weight: 600;
             text-decoration: none;
-            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
         }
 
         .button:hover,
         .button:focus-visible {
             background: white;
-            transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-secondary {
+            margin-left: 10px;
+            border: 2px solid #8cffb5;
+            background: transparent;
+            color: white;
+        }
+
+        .button-secondary:hover,
+        .button-secondary:focus-visible {
+            background: #8cffb5;
+            color: #075c32;
         }
 
         main {
@@ -123,11 +133,9 @@
             border-radius: 20px;
             background: white;
             box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
-            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .eco-card:hover {
-            transform: translateY(-8px);
             box-shadow: 0 15px 35px rgba(0, 80, 40, 0.2);
         }
 
@@ -182,6 +190,10 @@
                 font-size: 15px;
             }
 
+            .button-secondary {
+                margin: 12px 0 0;
+            }
+
             main {
                 padding: 45px 6%;
             }
@@ -204,6 +216,7 @@
             <a href="about.html">About</a>
             <a href="benefits.html">Benefits</a>
             <a href="ecohtml.html">Eco Lifestyle</a>
+            <a href="contact.html">Contact</a>
         </nav>
         <h1>Live Green, Live Better</h1>
         <h2>Small choices can make a big difference 🌎🌱</h2>
@@ -213,6 +226,7 @@
             what we do every day.
         </p>
         <a class="button" href="benefits.html">Explore the benefits →</a>
+        <a class="button button-secondary" href="contact.html">Contact us</a>
     </header>
 
     <main>
@@ -229,12 +243,12 @@
                 <p>Respect wildlife, care for green spaces, and help preserve the natural world.</p>
             </article>
             <article class="eco-card">
-                <img src="eco.jpg" alt="A green plant growing">
+                <img src="cs.jpg" alt="A green planet surrounded by trees">
                 <h3>Save resources</h3>
                 <p>Use water and energy thoughtfully so precious resources are there for the future.</p>
             </article>
             <article class="eco-card">
-                <img src="cs.jpg" alt="Nature and a cleaner environment">
+                <img src="kp.jpg" alt="Green nature representing a cleaner environment">
                 <h3>Reduce waste</h3>
                 <p>Choose reusable items, avoid unnecessary packaging, and recycle when you can.</p>
             </article>
