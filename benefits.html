@@ -1,0 +1,474 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Benefits of Eco Friendly Lifestyle</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", Arial, sans-serif;
+            background: #f1f8f3;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background:
+                linear-gradient(rgba(0, 70, 35, 0.75),
+                rgba(0, 40, 20, 0.75)),
+                url("rm.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            text-align: center;
+
+            padding: 25px 8% 70px;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 65px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #9cffc7;
+        }
+
+        /* TITLE */
+
+        header h1 {
+            color: #9cffc7;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* BENEFITS SECTION */
+
+        .benefits {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            color: #176b3a;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        /* CARDS */
+
+        .benefit-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+
+            width: 280px;
+            min-height: 300px;
+
+            padding: 30px 25px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 8px 25px rgba(0, 80, 40, 0.12);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+
+            box-shadow:
+                0 15px 35px rgba(0, 80, 40, 0.20);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #176b3a;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* EXTRA SECTION */
+
+        .message {
+            background: #dff5e7;
+
+            margin: 20px auto 60px;
+
+            max-width: 900px;
+
+            padding: 40px;
+
+            border-radius: 20px;
+
+            text-align: center;
+        }
+
+        .message h2 {
+            color: #126334;
+            margin-bottom: 15px;
+        }
+
+        .message p {
+            color: #444;
+            line-height: 1.8;
+        }
+
+        /* BUTTON */
+
+        button {
+            border: none;
+
+            background: #176b3a;
+            color: white;
+
+            padding: 13px 28px;
+
+            margin-top: 25px;
+
+            font-size: 15px;
+            font-weight: 600;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #8cffb5;
+            color: #075c32;
+
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #0b4d2b;
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header {
+                padding: 20px 5% 60px;
+            }
+
+            nav {
+                gap: 12px;
+                margin-bottom: 50px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .benefits h2 {
+                font-size: 25px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .message {
+                margin: 20px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav>
+
+            <a href="home.html">Home</a>
+
+            <a href="benefits.html">Benefits</a>
+
+            <a href="eco lifestyle.html">
+                Eco Lifestyle
+            </a>
+
+        </nav>
+
+
+        <h1>
+            Benefits of Eco-Friendly Lifestyle 🌱
+        </h1>
+
+        <p>
+            Living an eco-friendly lifestyle is good for our planet,
+            our health, and our future. Small changes in our daily
+            habits can create a big positive impact.
+        </p>
+
+    </header>
+
+
+    <!-- BENEFITS -->
+
+    <section class="benefits">
+
+        <h2>
+            Why Choose an Eco-Friendly Lifestyle?
+        </h2>
+
+        <p class="subtitle">
+            Here are some important benefits of protecting our planet.
+        </p>
+
+
+        <div class="benefit-container">
+
+
+            <!-- CARD 1 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    🌍
+                </div>
+
+                <h3>
+                    Protect the Environment
+                </h3>
+
+                <p>
+                    Eco-friendly habits reduce pollution, protect
+                    natural resources, and help keep our environment
+                    clean and healthy.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    🌳
+                </div>
+
+                <h3>
+                    Save Natural Resources
+                </h3>
+
+                <p>
+                    Using water, electricity, paper, and other
+                    resources carefully helps preserve them for
+                    future generations.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    💚
+                </div>
+
+                <h3>
+                    Better Health
+                </h3>
+
+                <p>
+                    Cleaner air, fresh surroundings, healthy food,
+                    and less pollution can support a healthier
+                    lifestyle.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    ♻️
+                </div>
+
+                <h3>
+                    Reduce Waste
+                </h3>
+
+                <p>
+                    Recycling and reusing products reduces the amount
+                    of waste sent to landfills and keeps our
+                    surroundings cleaner.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    💧
+                </div>
+
+                <h3>
+                    Save Water
+                </h3>
+
+                <p>
+                    Responsible use of water helps prevent water
+                    shortages and protects this valuable natural
+                    resource.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+
+            <div class="card">
+
+                <div class="icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Save Energy
+                </h3>
+
+                <p>
+                    Saving electricity and using energy efficiently
+                    can reduce pollution and help lower energy
+                    consumption.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <section class="message">
+
+        <h2>
+            🌱 Small Steps, Big Change
+        </h2>
+
+        <p>
+            Every small action matters. Switch off unnecessary lights,
+            save water, avoid plastic, recycle waste, plant trees,
+            and choose reusable products.
+        </p>
+
+        <button>
+            Start Today →
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Eco Friendly Lifestyle |
+            Let's Make Our Planet Greener 🌎🌱
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
+```
